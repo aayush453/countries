@@ -1,0 +1,18 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Country Code</th>
+        <th>Country</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries">
+        <td>{{ country.code }}</td>
+        <td>{{ country.country }}</td>
+        <td>{{ country.region }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
