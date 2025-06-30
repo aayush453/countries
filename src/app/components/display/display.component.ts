@@ -1,6 +1,6 @@
 import { DataService } from './../../services/data.service';
 import { Component, OnInit } from '@angular/core';
-import { Country, CountryApiResponse } from '../../models/countries.model'
+import { Country, CountryApiResponse, CountryTableHeaders } from '../../models/countries.model'
 
 @Component({
   selector: 'app-display',
@@ -9,6 +9,8 @@ import { Country, CountryApiResponse } from '../../models/countries.model'
 })
 export class DisplayComponent implements OnInit {
   countries: Country[] = [];
+  headers = CountryTableHeaders;
+  
 constructor(private dataService: DataService) {}
 
 ngOnInit() {

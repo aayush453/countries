@@ -2,9 +2,7 @@
   <table>
     <thead>
       <tr>
-        <th>Country Code</th>
-        <th>Country</th>
-        <th>Region</th>
+        <th *ngFor="let header of headers">{{header.label}}</th>
       </tr>
     </thead>
     <tbody>
