@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getCountries(): Observable<CountryApiResponse> {
-    const url = 'https://api.first.org/data/v1/countries'
+    const url = 'https://api.first.org/data/v1/countries';
     return this.http.get<any>(url);
   }
 }
